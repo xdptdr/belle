@@ -1,5 +1,5 @@
 {
-  "name": "belle",
+  "name": "xdrcl",
   "version": "3.0.0",
   "description": "Configurable React Components with great UX",
   "author": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nikgraf/belle.git"
+    "url": "git://github.com/xdptdr/xdrcl.git"
   },
   "main": "lib/index.js",
   "keywords": [

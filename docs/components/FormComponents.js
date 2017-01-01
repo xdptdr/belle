@@ -40,7 +40,7 @@ export default class FormComponents extends Component {
       <h2 style={{ marginTop: 0, marginBottom: 40 }}>Form Components</h2>
 
       <p>
-        Belle has many Form Components: ComboBox, Select, Rating, TextInput and Toggle.
+        XDRCL has many Form Components: ComboBox, Select, Rating, TextInput and Toggle.
         They differ from other components because they can be mutated via user interactions.
       </p>
 
@@ -87,7 +87,7 @@ export default class FormComponents extends Component {
       <h4>Two-Way Binding Helpers</h4>
 
       <p>Two-way binding is implicitly enforcing that some value in the DOM is always consistent with some React state.
-        Like React form components Belle form components also provide ReactLink: its syntactic sugar for setting up the common
+        Like React form components XDRCL form components also provide ReactLink: its syntactic sugar for setting up the common
         data flow loop pattern, or "linking" some data source to React state.
       </p>
 

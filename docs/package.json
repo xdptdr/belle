@@ -1,7 +1,7 @@
 {
-  "name": "belleDocumentation",
+  "name": "xdrclDocumentation",
   "version": "3.0.0",
-  "description": "Docuemtation for Belle",
+  "description": "Documetation for XDRCL",
   "author": {
     "name": "Nik Graf",
     "email": "nik@nikgraf.com",
@@ -10,7 +10,7 @@
   "main": "js/App.jsx",
   "repository": {
     "type": "git",
-    "url": "http://github.com/nikgraf/belle.git"
+    "url": "http://github.com/xdptdr/xdrcl.git"
   },
   "dependencies": {
     "highlight.js": "=9.2.0",

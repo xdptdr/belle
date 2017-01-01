@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Button, Card } from 'belle';
+import { Button, Card } from 'xdrcl';
 import Code from './Code';
 import ThemeSwitch from '../theme/ThemeSwitch';
 
-const overwriteCardStyleExample = `var belle = require('belle');
+const overwriteCardStyleExample = `var xdrcl = require('xdrcl');
 
-belle.style.card.style = {
+xdrcl.style.card.style = {
   marginBottom: 20,
   padding: 20,
   borderRadius: 2,
@@ -17,9 +17,9 @@ belle.style.card.style = {
 `;
 
 const extendButtonStyleExample = `var _ = require('underscore');
-var belle = require('belle');
+var xdrcl = require('xdrcl');
 
-belle.style.button.style = _.extend(belle.style.button.style, {
+xdrcl.style.button.style = _.extend(xdrcl.style.button.style, {
   color: '#FFF',
   background: '#444',
   border: '1px solid #444',
@@ -27,7 +27,7 @@ belle.style.button.style = _.extend(belle.style.button.style, {
 });
 
 // extending hoverStyle works as well
-belle.style.button.hoverStyle = _.extend(belle.style.button.hoverStyle, {
+xdrcl.style.button.hoverStyle = _.extend(xdrcl.style.button.hoverStyle, {
   color: '#FFF',
   background: '#666',
   border: '1px solid #666',
@@ -198,14 +198,14 @@ export default class Configuration extends Component {
       <h2 style={{ marginTop: 0, marginBottom: 40 }}>Configuration</h2>
 
       <p>
-        Belle provides you with the ability to modify the default appearance of
+        XDRCL provides you with the ability to modify the default appearance of
         it's components and even some of the behaviour.
       </p>
 
       <h3>Styles</h3>
 
       <p>
-        With this example you overwrite the hover style of default Belle button.
+        With this example you overwrite the hover style of default XDRCL button.
       </p>
 
       <Code value={ overwriteCardStyleExample } style={{ marginTop: 40 }} />
@@ -245,7 +245,7 @@ export default class Configuration extends Component {
 
       <h4>Themes</h4>
 
-      This global configuration enables to create custom Belle component themes. For demonstration
+      This global configuration enables to create custom XDRCL component themes. For demonstration
       we enabled to switch between 3 different themes.
 
       <ThemeSwitch />
@@ -253,7 +253,7 @@ export default class Configuration extends Component {
       <h4>Structure</h4>
 
       <p>
-        The following example shows the structure of belle.style.
+        The following example shows the structure of xdrcl.style.
       </p>
 
       <Code value={ styleStructure } style={{ marginTop: 40 }} />
@@ -266,7 +266,7 @@ export default class Configuration extends Component {
         Focus styles are helpful to identify which element is currently
         in focus when tabbing through the elements e.g. a user wants to
         switch to the next input element. Yet it feels somewhat distracting
-        when clicking on the Button. That's why Belle by default prevents
+        when clicking on the Button. That's why XDRCL by default prevents
         the focus style being applied in case the Button is focused on
         by a touch or click event. This default behaviour can be deactivated by
         setting `preventFocusStyleForTouchAndClick` to false.
@@ -322,7 +322,7 @@ export default class Configuration extends Component {
       <h4>Structure</h4>
 
       <p>
-        The following example shows the structure of belle.config.
+        The following example shows the structure of xdrcl.config.
       </p>
 
       <Code value={ configStructure } style={{ marginTop: 40 }} />

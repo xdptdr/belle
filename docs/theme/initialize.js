@@ -1,6 +1,6 @@
-import belle from 'belle';
+import xdrcl from 'xdrcl';
 import bootstrap3Theme from './bootstrap-3';
-import belleWithClassicFocusTheme from './belle-with-classic-focus';
+import xdrclWithClassicFocusTheme from './xdrcl-with-classic-focus';
 
 /**
  * Get a URL query parameter from the hash.
@@ -31,11 +31,11 @@ function initializeTheme() {
   const theme = getParameterByName('theme');
 
   if (theme === 'bootstrap') {
-    updateStructure(belle.style, bootstrap3Theme.style);
-    updateStructure(belle.config, bootstrap3Theme.config);
-  } else if (theme === 'belle-with-default-focus') {
-    updateStructure(belle.style, belleWithClassicFocusTheme.style);
-    updateStructure(belle.config, belleWithClassicFocusTheme.config);
+    updateStructure(xdrcl.style, bootstrap3Theme.style);
+    updateStructure(xdrcl.config, bootstrap3Theme.config);
+  } else if (theme === 'xdrcl-with-default-focus') {
+    updateStructure(xdrcl.style, xdrclWithClassicFocusTheme.style);
+    updateStructure(xdrcl.config, xdrclWithClassicFocusTheme.config);
   }
 }
 

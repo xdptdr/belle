@@ -1,7 +1,6 @@
 import { flatten, mapObject } from '../utils/helpers';
 import CSSPropertyOperations from 'react-dom/lib/CSSPropertyOperations';
 import { canUseDOM } from 'exenv';
-import animations from '../style/animations';
 
 let styleElement;
 const styleStorage = {};
@@ -13,7 +12,7 @@ function injectStyleTag() {
   if (!styleElement && canUseDOM) {
     styleElement = document.createElement('style');
     document.body.appendChild(styleElement);
-    styleElement.setAttribute('class', 'belle-style');
+    styleElement.setAttribute('class', 'xdrcl-style');
   }
 }
 
@@ -64,7 +63,7 @@ function updateStyling() {
     return pseudoClassesArray;
   });
   if (styleElement) {
-    styleElement.innerHTML = flatten([animations, styles]).join(' ');
+    styleElement.innerHTML = flatten([styles]).join(' ');
   }
 }
 

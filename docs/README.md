@@ -1,4 +1,4 @@
-Belle Documentation
+XDRCL Documentation
 ================
 
 ## Install
@@ -7,7 +7,7 @@ Belle Documentation
 npm install
 ```
 
-Make sure you ran `npm install` in the root folder of Belle.
+Make sure you ran `npm install` in the root folder of XDRCL.
 
 ## Run
 

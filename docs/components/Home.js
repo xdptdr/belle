@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ThemeSwitch from '../theme/ThemeSwitch';
 import GettingStarted from './GettingStarted';
-import { Card } from 'belle';
 
 export default class Home extends Component {
 
@@ -9,7 +8,7 @@ export default class Home extends Component {
     return (
       <div style={{ marginTop: -20 }}>
         <p>
-          Belle provides you with a set of React components like Toggle, ComboBox, Rating, TextInput, Button, Card, Select and soon many more.
+          XDRCL provides you with a set of React components like Toggle, ComboBox, Rating, TextInput, Button, Card, Select and soon many more.
         </p>
 
         <p>
@@ -18,12 +17,12 @@ export default class Home extends Component {
 
         <h3 style={{ marginTop: 40 }}>Overview</h3>
 
-        <Card style={{ borderTop: '1px solid #f2f2f2' }}>
+        <div style={{ borderTop: '1px solid #f2f2f2' }}>
           <img
             src="images/overview.png"
             style={{ width: '100%' }}
           />
-        </Card>
+        </div>
 
         <div style={{ marginTop: 40 }}>
           <p style={{ borderRadius: 2,

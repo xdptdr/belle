@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Code from './Code';
 
-const installCommand = 'npm install belle';
+const installCommand = 'npm install xdrcl';
 
 const usageExampleHtml = `<!doctype html>
 <html lang="en">
@@ -20,8 +20,8 @@ const usageExampleHtml = `<!doctype html>
 `;
 
 const usageExampleJavaScript = `var React = require('react');
-var belle = require('belle');
-var TextInput = belle.TextInput;
+var xdrcl = require('xdrcl');
+var TextInput = xdrcl.TextInput;
 
 var App = React.createClass({
 
@@ -43,15 +43,15 @@ export default class GettingStarted extends Component {
       <h2 style={{ marginTop: 0, marginBottom: 40 }}>Getting Started</h2>
 
       <p>
-        Belle is available as <a href="http://npmjs.org">npm</a> package. Once you have npm you can install Belle in your project folder with:
+        XDRCL is available as <a href="http://npmjs.org">npm</a> package. Once you have npm you can install XDRCL in your project folder with:
       </p>
 
       <Code value={ installCommand } style={{ marginTop: 40 }} />
 
-      <h3>Import & use Belle Components</h3>
+      <h3>Import & use XDRCL Components</h3>
 
       <p>
-        We recommend you to get started with <a href="https://facebook.github.io/react/">React</a> first. Once you have a simple application setup you can import any Belle component and use it right away. <b>No stylesheets, font or any other prerequisite needed.</b>
+        We recommend you to get started with <a href="https://facebook.github.io/react/">React</a> first. Once you have a simple application setup you can import any XDRCL component and use it right away. <b>No stylesheets, font or any other prerequisite needed.</b>
       </p>
 
       <Code value={ usageExampleHtml } style={{ marginTop: 40 }} />
@@ -61,7 +61,7 @@ export default class GettingStarted extends Component {
       <h3>Discussion or need help?</h3>
 
       <p>
-        Join us at the <b>#belle</b> channel of the <a href="http://reactiflux.com/">Reactiflux</a> Slack community or our <a href="https://gitter.im/nikgraf/belle">Gitter room</a>.
+        Join us at the <b>#xdrcl</b> channel of the <a href="http://reactiflux.com/">Reactiflux</a> Slack community or our <a href="https://gitter.im/nikgraf/xdrcl">Gitter room</a>.
       </p>
 
     </div>);

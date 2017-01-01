@@ -1,4 +1,4 @@
-const belleWithClassicFocus = {
+const xdrclWithClassicFocus = {
 
   config: {
     button: {
@@ -49,4 +49,4 @@ const belleWithClassicFocus = {
 
 };
 
-export default belleWithClassicFocus;
+export default xdrclWithClassicFocus;

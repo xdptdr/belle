@@ -9,7 +9,7 @@ export default class Philosophy extends Component {
       <p><i>“Great UX starts with a good UI”</i></p>
 
       <p>
-        With Belle I'm aiming to provide a library that follows a couple well established
+        With XDRCL I'm aiming to provide a library that follows a couple well established
         principles. While some of them might not be consider best practice today
         We believe they will become some day in the near future.
       </p>
@@ -34,7 +34,7 @@ export default class Philosophy extends Component {
       </p>
 
       <p>
-        There are two major personalities to target with Belle. One is the developer.
+        There are two major personalities to target with XDRCL. One is the developer.
         For him/her APIs should be provided in a consistent way through all components.
         The other and more important is the users of the components. Every color,
         animation or behavior should be aligned with the other components to provide
@@ -53,7 +53,7 @@ export default class Philosophy extends Component {
       </p>
 
       <p>
-        That's why with Belle styles should apply to the components themselves in the DOM.
+        That's why with XDRCL styles should apply to the components themselves in the DOM.
         By doing so the visual appearance and business logic are combined in location.
       </p>
 
@@ -69,7 +69,7 @@ export default class Philosophy extends Component {
 
       <p>
         The user should see affects of his actions instantly. Any delay can cause confusion
-        and frustration. While instant certainly is not always possible Belle strives to
+        and frustration. While instant certainly is not always possible XDRCL strives to
         provide an experience close to instant.
       </p>
 

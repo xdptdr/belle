@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'belle';
+import { Button } from 'xdrcl';
 import Code from '../Code';
 import { propertyNameStyle, propertyDescriptionStyle } from '../../style';
 
@@ -63,7 +63,7 @@ export default class ButtonDocumentation extends Component {
       <Code value={ basicCodeExample } style={{ marginTop: 40 }} />
 
       <p style={{ marginTop: 40 }}>
-        <i>Note:</i> Belle's Button is rendered as normal HTML button and behaves exactly like it except for these behaviours:
+        <i>Note:</i> XDRCL's Button is rendered as normal HTML button and behaves exactly like it except for these behaviours:
       </p>
 
       <ul>
@@ -241,7 +241,7 @@ export default class ButtonDocumentation extends Component {
               Focus styles are helpful to identify which element is currently
               in focus when tabbing through the elements e.g. a user wants to
               switch to the next input element. Yet it feels somewhat distracting
-              when clicking on the Button. That's why Belle by default prevents
+              when clicking on the Button. That's why XDRCL by default prevents
               the focus style being applied in case the Button is focused on
               by a touch or click event.
             </p>

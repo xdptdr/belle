@@ -48,7 +48,7 @@ const buttonStyle = {
   },
 
   focusStyle: {
-    WebkitAnimation: 'belle-button-focus 2s',
+    WebkitAnimation: 'xdrcl-button-focus 2s',
     outline: 0, // avoid default focus behaviour
   },
 
@@ -119,7 +119,7 @@ const buttonStyle = {
   },
 
   primaryFocusStyle: {
-    WebkitAnimation: 'belle-button-focus 2s',
+    WebkitAnimation: 'xdrcl-button-focus 2s',
     outline: 0, // avoid default focus behaviour
   },
 

@@ -7,7 +7,7 @@ Examples Playground for Development
 npm install
 ```
 
-Make sure you ran `npm install` in the root folder of Belle.
+Make sure you ran `npm install` in the root folder of XDRCL.
 
 ## Run
 

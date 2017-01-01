@@ -104,7 +104,7 @@ export default function calculateTextareaHeight(textareaElement, textareaValue =
   if (!hiddenTextarea) {
     hiddenTextarea = document.createElement('textarea');
     document.body.appendChild(hiddenTextarea);
-    hiddenTextarea.setAttribute('class', 'belle-input-helper');
+    hiddenTextarea.setAttribute('class', 'xdrcl-input-helper');
   }
 
   const { style, verticalPaddingSize, verticalBorderSize, boxSizing } = calculateStyling(textareaElement);

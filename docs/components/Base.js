@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import { Card } from 'belle';
 import { Link } from 'react-router';
 import Column from './Column';
 
@@ -74,7 +73,7 @@ export default React.createClass({
                             marginRight: 12, }}
               >
                 <img
-                  src="images/belle_logo.png"
+                  src="images/xdrcl_logo.png"
                   style={{ width: 62, height: 88 }}
                 />
               </div>
@@ -82,7 +81,7 @@ export default React.createClass({
                              display: 'block',
                              float: 'left', }}
               >
-                Belle
+                XDRCL
               </span>
             </h1>
           </Link>
@@ -90,7 +89,7 @@ export default React.createClass({
             Configurable React Components with great UX
           </p>
           <iframe
-            src="https://ghbtns.com/github-btn.html?user=nikgraf&repo=belle&type=star&count=true&size=large"
+            src="https://ghbtns.com/github-btn.html?user=nikgraf&repo=xdrcl&type=star&count=true&size=large"
             frameBorder="0"
             scrolling="0"
             width="180px"
@@ -110,7 +109,7 @@ export default React.createClass({
           mediumScreenStyle={{ margin: '0 auto', width: 910, paddingRight: 110 }}
         >
           <iframe
-            src="https://ghbtns.com/github-btn.html?user=nikgraf&repo=belle&type=star&count=true&size=medium"
+            src="https://ghbtns.com/github-btn.html?user=nikgraf&repo=xdrcl&type=star&count=true&size=medium"
             frameBorder="0"
             scrolling="0"
             width="100px"
@@ -131,11 +130,11 @@ export default React.createClass({
                             marginTop: 6, }}
               >
                 <img
-                  src="images/belle_logo.png"
+                  src="images/xdrcl_logo.png"
                   style={{ height: 19, top: -7, position: 'relative' }}
                 />
               </div>
-              Belle
+              XDRCL
             </h1>
           </Link>
         </Column>
@@ -170,47 +169,11 @@ export default React.createClass({
             <li>
               <Link style={{ display: 'block', padding: '3px 0' }} to="/component/button">Button</Link>
             </li>
-            <li>
-              <Link style={{ display: 'block', padding: '3px 0' }} to="/component/card">Card</Link>
-            </li>
-            <li>
-              <Link style={{ display: 'block', padding: '3px 0' }} to="/component/combo-box">ComboBox</Link>
-            </li>
-            <li>
-              <Link style={{ display: 'block', padding: '3px 0' }} to="/component/date-picker">DatePicker</Link>
-            </li>
-            <li>
-              <Link style={{ display: 'block', padding: '3px 0' }} to="/component/select">Select</Link>
-            </li>
-            <li style={{ paddingLeft: 10 }}>
-              <Link style={{ display: 'block', padding: '1px 0' }} to="/component/option">Option</Link>
-            </li>
-            <li style={{ paddingLeft: 10 }}>
-              <Link style={{ display: 'block', padding: '1px 0' }} to="/component/placeholder">Placeholder</Link>
-            </li>
-            <li style={{ paddingLeft: 10 }}>
-              <Link style={{ display: 'block', padding: '1px 0' }} to="/component/separator">Separator</Link>
-            </li>
-            <li>
-              <Link style={{ display: 'block', padding: '4px 0' }} to="/component/rating">Rating</Link>
-            </li>
-            <li>
-              <Link style={{ display: 'block', padding: '4px 0' }} to="/component/spinner">Spinner</Link>
-            </li>
-            <li>
-              <Link style={{ display: 'block', padding: '4px 0' }} to="/component/text-input">TextInput</Link>
-            </li>
-            <li>
-              <Link style={{ display: 'block', padding: '4px 0' }} to="/component/toggle">Toggle</Link>
-            </li>
-            <li style={{ paddingLeft: 10 }}>
-              <Link style={{ display: 'block', padding: '1px 0' }} to="/component/choice">Choice</Link>
-            </li>
           </ul>
           <span style={{ color: '#738088' }} >Guides</span>
           <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
             <li>
-              <Link style={{ display: 'block', padding: '3px 0' }} to="/guide/introducing-belle">Introducing Belle</Link>
+              <Link style={{ display: 'block', padding: '3px 0' }} to="/guide/introducing-xdrcl">Introducing XDRCL</Link>
             </li>
             <li>
               <Link style={{ display: 'block', padding: '3px 0' }} to="/guide/form-components">Form Components</Link>
@@ -229,10 +192,10 @@ export default React.createClass({
               <Link style={{ display: 'block', padding: '3px 0' }} to="/about">About</Link>
             </li>
             <li>
-              <a style={{ display: 'block', padding: '3px 0' }} href="https://github.com/nikgraf/belle" target="_blank">Code on Github</a>
+              <a style={{ display: 'block', padding: '3px 0' }} href="https://github.com/nikgraf/xdrcl" target="_blank">Code on Github</a>
             </li>
             <li>
-              <a style={{ display: 'block', padding: '3px 0' }} href="https://github.com/nikgraf/belle/issues" target="_blank">Report an Issue</a>
+              <a style={{ display: 'block', padding: '3px 0' }} href="https://github.com/nikgraf/xdrcl/issues" target="_blank">Report an Issue</a>
             </li>
           </ul>
         </Column>
@@ -241,9 +204,9 @@ export default React.createClass({
           smallScreenStyle={{ width: '96%', margin: '0 auto' }}
           mediumScreenStyle={{ float: 'left', width: 640 }}
         >
-          <Card style={ cardContentStyle }>
+          <div style={ cardContentStyle }>
             { this.props.children }
-          </Card>
+          </div>
         </Column>
         <div style={{ clear: 'left' }}></div>
       </Column>

@@ -979,9 +979,9 @@ const bootstrap3Theme = {
       characterStyle: {
         color: '#666',
         display: 'inline-block',
-        WebkitAnimation: 'belle-spinner-pulse 2s infinite ease-in-out',
-        OAnimation: 'belle-spinner-pulse 2s infinite ease-in-out',
-        animation: 'belle-spinner-pulse 2s infinite ease-in-out',
+        WebkitAnimation: 'xdrcl-spinner-pulse 2s infinite ease-in-out',
+        OAnimation: 'xdrcl-spinner-pulse 2s infinite ease-in-out',
+        animation: 'xdrcl-spinner-pulse 2s infinite ease-in-out',
       },
     },
     textInput: {
