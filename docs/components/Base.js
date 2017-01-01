@@ -88,14 +88,6 @@ export default React.createClass({
           <p style={{ fontSize: 22, marginTop: 0, paddingTop: 20, color: '#FEFEFE', clear: 'both' }}>
             Configurable React Components with great UX
           </p>
-          <iframe
-            src="https://ghbtns.com/github-btn.html?user=nikgraf&repo=xdrcl&type=star&count=true&size=large"
-            frameBorder="0"
-            scrolling="0"
-            width="180px"
-            height="30px"
-            style={{ marginBottom: 20, }}
-          />
         </Column>
       </header>
     );
@@ -108,15 +100,6 @@ export default React.createClass({
           smallScreenStyle={{ width: '100%', padding: '0 20px' }}
           mediumScreenStyle={{ margin: '0 auto', width: 910, paddingRight: 110 }}
         >
-          <iframe
-            src="https://ghbtns.com/github-btn.html?user=nikgraf&repo=xdrcl&type=star&count=true&size=medium"
-            frameBorder="0"
-            scrolling="0"
-            width="100px"
-            height="30px"
-            style={{ float: 'right', marginTop: 20 }}
-          />
-
           <Link style={{ display: 'inline' }} to="/">
             <h1 style={{ fontSize: 24, margin: 0, padding: '10px 0', color: '#FFF', fontFamily: '"Trebuchet MS", Helvetica, sans-serif' }}>
               <div style={{ borderRadius: 26,
@@ -175,9 +158,6 @@ export default React.createClass({
             <li>
               <Link style={{ display: 'block', padding: '3px 0' }} to="/guide/introducing-xdrcl">Introducing XDRCL</Link>
             </li>
-            <li>
-              <Link style={{ display: 'block', padding: '3px 0' }} to="/guide/form-components">Form Components</Link>
-            </li>
           </ul>
           <span style={{ color: '#738088' }} >General</span>
           <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
@@ -192,10 +172,10 @@ export default React.createClass({
               <Link style={{ display: 'block', padding: '3px 0' }} to="/about">About</Link>
             </li>
             <li>
-              <a style={{ display: 'block', padding: '3px 0' }} href="https://github.com/nikgraf/xdrcl" target="_blank">Code on Github</a>
+              <a style={{ display: 'block', padding: '3px 0' }} href="https://github.com/xdptdr/xdrcl" target="_blank">Code on Github</a>
             </li>
             <li>
-              <a style={{ display: 'block', padding: '3px 0' }} href="https://github.com/nikgraf/xdrcl/issues" target="_blank">Report an Issue</a>
+              <a style={{ display: 'block', padding: '3px 0' }} href="https://github.com/xdptdr/xdrcl/issues" target="_blank">Report an Issue</a>
             </li>
           </ul>
         </Column>
@@ -210,18 +190,6 @@ export default React.createClass({
         </Column>
         <div style={{ clear: 'left' }}></div>
       </Column>
-      <footer style={{ clear: 'both', textAlign: 'center', paddingTop: 40, paddingBottom: 60 }}>
-        <Column
-          smallScreenStyle={{}}
-          mediumScreenStyle={{ paddingLeft: 160 }}
-        >
-          Built with
-          <span style={{ color: 'rgb(200, 0, 0)', fontSize: 22, position: 'relative', top: 3 }}>
-            &nbsp;&#x2764;&nbsp;
-          </span>
-          on Planet Earth :)
-        </Column>
-      </footer>
     </div>);
   },
 });

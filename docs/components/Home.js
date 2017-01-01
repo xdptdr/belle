@@ -8,7 +8,7 @@ export default class Home extends Component {
     return (
       <div style={{ marginTop: -20 }}>
         <p>
-          XDRCL provides you with a set of React components like Toggle, ComboBox, Rating, TextInput, Button, Card, Select and soon many more.
+          XDRCL provides you with a set of React components like Button.
         </p>
 
         <p>
@@ -16,45 +16,6 @@ export default class Home extends Component {
         </p>
 
         <h3 style={{ marginTop: 40 }}>Overview</h3>
-
-        <div style={{ borderTop: '1px solid #f2f2f2' }}>
-          <img
-            src="images/overview.png"
-            style={{ width: '100%' }}
-          />
-        </div>
-
-        <div style={{ marginTop: 40 }}>
-          <p style={{ borderRadius: 2,
-                      clear: 'both',
-                      padding: 5, }}
-          >
-            <span style={{ fontSize: 32, color: '#ccc' }}>“ </span>
-            This is so good. I like the effort you put into tweaking the UX.
-            <span style={{ fontSize: 32,
-                           display: 'inline-block',
-                           position: 'relative',
-                           top: 26,
-                           color: '#ccc',
-                           left: 4, }}
-            > ”</span>
-          </p>
-          <div style={{ marginLeft: 30 }}>
-            <img
-              src="images/vjeux.jpeg"
-              style={{ height: 50,
-                       float: 'left',
-                       borderRadius: 50, }}
-            />
-            <div style={{ fontSize: 18,
-                          marginLeft: 60, }}
-            >Christopher Chedeau (Vjeux)</div>
-            <div style={{ color: '#888',
-                          marginLeft: 60, }}
-            >React Core Team</div>
-          </div>
-          <div style={{ clear: 'both' }}></div>
-        </div>
 
         <h3>Browser Support</h3>
         <ul>
