@@ -34,7 +34,9 @@
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint ./",
     "lint:eslint:fix": "eslint --fix ./",
-    "alex": "alex README.md"
+    "alex": "alex README.md",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "alex": "^2.0.1",
@@ -61,7 +63,8 @@
     "redbox-react": "^1.2.2",
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.10.0"
+    "webpack-hot-middleware": "^2.10.0",
+    "@kadira/storybook": "^2.21.0"
   },
   "jest": {
     "testRunner": "jasmine2",
