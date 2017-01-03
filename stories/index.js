@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
-import Button from './Button';
+import Button from '../src/components/Button.js';
 import Welcome from './Welcome';
 
 storiesOf('Welcome', module)
@@ -9,9 +9,13 @@ storiesOf('Welcome', module)
   ));
 
 storiesOf('Button', module)
-  .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
-  ))
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
-  ));
+  .add('all buttons look the same on all browsers', () => (
+    <div>
+		<Button type="button" onClick={action('clicked')} value="Button" />
+		<Button type="input" onClick={action('clicked')} value="Button" />
+		<Button type="submit" onClick={action('clicked')} value="Button" />
+		<Button type="div" onClick={action('clicked')} value="Button" />
+		<Button type="span" onClick={action('clicked')} value="Button" />
+	</div>
+  )
+);
