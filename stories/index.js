@@ -2,6 +2,8 @@ import React from 'react';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import Button from '../src/components/Button.js';
 import Welcome from './Welcome';
+import ContextMenuDemo from './ContextMenuDemo';
+import './story.css';
 
 storiesOf('Welcome', module)
   .add('to Storybook', () => (
@@ -17,5 +19,11 @@ storiesOf('Button', module)
 		<Button type="div" onClick={action('clicked')} value="Button" />
 		<Button type="span" onClick={action('clicked')} value="Button" />
 	</div>
+  )
+);
+
+storiesOf('ContextMenu', module)
+  .add('right click => contextMenu', () => (
+    <ContextMenuDemo />
   )
 );

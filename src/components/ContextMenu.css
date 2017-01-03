@@ -1,0 +1,24 @@
+.xdrcl-button {
+	padding:5px;
+	margin:0px;
+	border:1px solid gray;
+	font-size:1em;
+	font-family:serif;
+	background:#DDDDDD;
+	cursor:pointer;
+	border-radius:2px;
+}
+.xdrcl-button-div, .xdrcl-button-span {
+	display:inline-block;
+}
+.xdrcl-button:hover {
+	opacity:.8;
+}
+.xdrcl-button:active {
+	opacity:.8;
+	color:white;
+}
+.xdrcl-button:focus {
+	opacity:.8;
+	font-style:italic;
+}
