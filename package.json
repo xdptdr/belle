@@ -36,10 +36,12 @@
     "lint:eslint:fix": "eslint --fix ./",
     "alex": "alex README.md",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+	"deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
+    "@kadira/storybook-deployer": "^1.2.0",
     "alex": "^2.0.1",
     "autoprefixer": "^6.6.1",
     "babel": "^6.5.2",
