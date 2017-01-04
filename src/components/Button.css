@@ -11,14 +11,23 @@
 .xdrcl-button-div, .xdrcl-button-span {
 	display:inline-block;
 }
-.xdrcl-button:hover {
+.xdrcl-button.enabled:hover {
 	opacity:.8;
 }
-.xdrcl-button:active {
+.xdrcl-button.enabled:active {
 	opacity:.8;
 	color:white;
 }
-.xdrcl-button:focus {
+.xdrcl-button.enabled:focus {
 	opacity:.8;
 	font-style:italic;
+}
+
+.xdrcl-button.disabled:focus {
+	outline:none;
+}
+
+.xdrcl-button.disabled  {
+	color:#555555;
+	cursor: not-allowed;
 }
