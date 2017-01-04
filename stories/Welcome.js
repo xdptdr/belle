@@ -43,39 +43,36 @@ export default class Welcome extends React.Component {
   render() {
     return (
       <div style={styles.main}>
-        <h1>Welcome to STORYBOOK</h1>
+        <h1>Welcome to XDRCL</h1>
         <p>
-          This is a UI component dev environment for your app.
-        </p>
-        <p>
-          We've added some basic stories inside the <code style={styles.code}>src/stories</code> directory.
-          <br/>
-          A story is a single state of one or more UI components. You can have as many stories as you want.
-          <br/>
-          (Basically a story is like a visual test case.)
+          XDRCL is a React component library.
         </p>
         <p>
-          See these sample <a style={styles.link} href='#' onClick={this.showApp.bind(this)}>stories</a> for a component called <code style={styles.code}>Button</code>.
+          There are many React component libraries out there, such as:
+        </p>
+		<ul>
+			<li><a href="http://nikgraf.github.io/belle/">Belle</a></li>
+			<li><a href="http://react-toolbox.com/">React Toolbox</a></li>
+			<li><a href="http://elemental-ui.com/">Elemental UI</a></li>
+			<li><a href="http://reactdesktop.js.org/demo/">React Desktop</a></li>
+			<li><a href="http://jxnblk.com/rebass/">Rebass</a></li>
+			<li><a href="https://react-bootstrap.github.io/components.html">Bootstrap</a></li>
+			<li><a href="http://www.material-ui.com/#/">Material UI</a></li>
+			<li><a href="http://jquense.github.io/react-widgets/docs/">React Widgets</a></li>
+			<li><a href="https://www.muicss.com/docs/v1/example-layouts/responsive-side-menu">MUI</a></li>
+		</ul>
+        <p>
+          If you are able to use any of these, you should have no problem using XDRCL.
         </p>
         <p>
-          Just like that, you can add your own components as stories.
-          <br />
-          You can also edit those components and see changes right away.
-          <br />
-          (Try editing the <code style={styles.code}>Button</code> component
-          located at <code style={styles.code}>src/stories/Button.js</code>.)
+          XDRCL and these libraries are especially suited for applications created with <code>create-react-app</code>.
         </p>
         <p>
-          This is just one thing you can do with Storybook.
-          <br/>
-          Have a look at the <a style={styles.link} href="https://github.com/kadirahq/react-storybook" target="_blank">React Storybook</a> repo for more information.
+          The current status of XDRCL is very experimental. You are free to try it and comment with <a href="https://github.com/xdptdr/xdrcl/issues">issues on GitHub</a>. But please keep in mind that I mainly created this library for experimenting with complex components in React with cross cutting concerns. For eample, context menus should be created at a different level in the DOM hierarchy than the components that trigger the tooltip.
         </p>
-        <p style={styles.note}>
-          <b>NOTE:</b>
-          <br/>
-          Have a look at the <code style={styles.code}>.storybook/webpack.config.js</code> to add webpack
-          loaders and plugins you are using in this project.
-        </p>
+		<p>
+			Most component libraries I came accross address poorly these kind of issues. An exhaustive set of components will start to be built only when these and other issues have been resolved.
+		</p>
       </div>
     );
   }
