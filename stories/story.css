@@ -1,3 +1,45 @@
 * {
 	margin:0px;
 }
+
+.story {
+	padding:0 10px;
+	margin:0px auto;
+	font: normal 16px/1.4em "Lato", Calibri, Arial, sans-serif;
+	background:#f9f9f9;
+	text-rendering:optimizeLegibility;
+}
+
+.story  h1 {
+	border-bottom:1px solid #56789A;
+	color:#56789A;
+	font-size:22px;
+	line-height:1em;
+	margin-bottom:20px;
+	padding:10px 0;
+}
+
+.story  a {
+	color:#56789A;
+	text-decoration:none;
+}
+
+.story  p {
+	padding: 0.4em 0;
+	margin:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+	display:block;
+	color:#393939;
+}
+
+.story  ul {
+	padding: 10px 0 10px 24px;
+	list-style:disc;
+}
+
+.story  li {
+	padding-bottom: 1px;
+}

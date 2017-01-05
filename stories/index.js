@@ -12,7 +12,7 @@ storiesOf('Welcome', module)
 
 storiesOf('Button', module)
 .add('Notes', () => (
-    <div>
+    <div className="story">
 		<h1>Notes about buttons</h1>
 		<p>The different ways of rendering buttons include:</p>
 		<ul>
