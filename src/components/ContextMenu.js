@@ -2,15 +2,15 @@ import React, { Component, PropTypes } from 'react'; // eslint-disable-line no-u
 import './ContextMenu.css'
 
 export const ContextMenuSupport = {
-	computeXY : (e) => {
-		let n = e.target.parentNode;
+	computeXY : (e, n = e.target.parentNode) => {
 		let deltaX = 0;
 		let deltaY = 0;
-		while(n !== null && n.parentNode !== n) {
-			if(n.style.position=='relative') {
-				deltaX = n.offsetLeft;
-				deltaY = n.offsetTop;
-				break;
+		while(n !== null && n.parentNode !== n && n.nodeName !== '#document') {
+			deltaX -= n.scrollLeft;
+			deltaY -= n.scrollTop;
+			if(n.style.overflow==='auto') {
+				deltaX += n.offsetLeft;
+				deltaY += n.offsetTop;
 			}
 			n = n.parentNode;
 		}

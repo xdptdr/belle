@@ -55,12 +55,27 @@ storiesOf('Button', module)
 ));
 
 storiesOf('ContextMenu', module)
-.add('right click => contextMenu', () => (
+.add('Declarations', () => (
+	<div className="story">
+		<h1>Declarations</h1>
+		<p>I declare that React will be useless until there it provides the possibilities for creating context menus.</p>
+		<p>I declare that, in the current state of things, React fails to provide these possibilities.</p>
+		<p>This is way current React component libraries are restricted to what is akin to improved CSS/HTML templates.</p>
+		<p>These stories, in the current state, have their requirements working, but these have a price. Everything in the demos has to be aware of the context menu component.</p>
+		<p>I put anybody to the challenge of creating a reusable context menu "component" in React that would usable maybe like this:</p>
+		<p style={{textAlign:'center'}}><code>&lt;AnElement ref=&quot;element&quot;&gt;&lt;ContextMenu&gt;A Context Menu&lt;/ContextMenu&gt;&lt;/AnElement&gt;</code></p>
+	</div>
+)).add('right click => contextMenu', () => (
 	<ContextMenuDemo.Demo1 />
-))
-.add('context menu is relative to the closest relatively positionned element', () => (
+)).add('context menu is relative to the closest relatively positionned element', () => (
     <ContextMenuDemo.Demo2 />
 ))
 .add('with multiple scroll, context menu can be instantiated at various level depending on where the overflow clipping should occur', () => (
     <ContextMenuDemo.Demo3 />
+)).add('clicking outside a context menu should close it', () => (
+    <div className="story">Nothing here yet</div>
+)).add('context menu may have to be created in a third party component', () => (
+    <ContextMenuDemo.Demo4 />
+)).add('context menu should reposition itself if going off the edges', () => (
+    <div>Coming</div>
 ));
