@@ -78,4 +78,6 @@ storiesOf('ContextMenu', module)
     <ContextMenuDemo.Demo4 />
 )).add('context menu should reposition itself if going off the edges', () => (
     <div>Coming</div>
+)).add('Real life example', () => (
+    <ContextMenuDemo.RealLife />
 ));

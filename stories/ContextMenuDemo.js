@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ContextMenu, { ContextMenuSupport } from '../src/components/ContextMenu.js';
 import { action } from '@kadira/storybook';
+import _ from 'lodash';
 
 export class Demo1 extends React.Component {
   state = {
@@ -160,4 +161,60 @@ export class Demo4 extends React.Component {
   }
 }
 
-export default { Demo1, Demo2, Demo3, Demo4 }
+export class RealLife extends React.Component {
+  state = {
+	showContextMenu:false,
+	item:0,
+	contextMenuData:null
+  };
+  onContextMenu = (idx, e) => {
+    e.preventDefault();
+	let target = ReactDOM.findDOMNode(this.refs["main"]);
+	let {x,y} = ContextMenuSupport.computeXY(e, target);
+	this.setState({showContextMenu:true, contextMenuX:x, contextMenuY:y, contextMenuData:idx});
+  }
+  onContextMenuClose = (e) => {
+	e.preventDefault();
+	this.setState({showContextMenu:false, item:this.state.contextMenuData, contextMenuData:null});
+  }
+  render() {
+	let { showContextMenu, contextMenuX, contextMenuY, level } = this.state;
+	let contextMenu = null;
+	if(showContextMenu) {
+		contextMenu = <ContextMenu onClose={this.onContextMenuClose} x={contextMenuX} y={contextMenuY}>
+			Switch to this item
+		</ContextMenu>
+	}
+	let items = _.map(new Array(50), (v,idx)=>(
+		<li
+			key={idx}
+			style={{position:'relative',width:'100%'}}
+		>
+			Item {idx}
+			<div
+				style={{background:'pink',width:'10px',height:'10px',position:'absolute',right:'10px',top:'3px',cursor:'pointer'}}
+				onContextMenu={this.onContextMenu.bind(this,idx)}
+			/>
+		</li>
+	));
+	let data = _.map(new Array(this.state.item), (v,idx)=>(
+		<li
+			key={idx}
+		>
+			Data {idx}
+		</li>
+	));
+	return <div style={{background:'pink',position:'absolute',top:'0px',left:'0px',right:'0px',bottom:'0px'}} ref="main">
+		<div style={{background:'yellow',position:'absolute',top:'0px',bottom:'0px',left:'0px',right:'80%', overflowY:'scroll'}}>
+			<ul>{items}</ul>
+		</div>
+		<div style={{background:'pink',position:'absolute',top:'0px',bottom:'0px',left:'20%',right:'0px', overflowY:'scroll'}}>
+			You are looking at item {this.state.item}
+			<ul>{data}</ul>
+		</div>
+		{contextMenu}
+	</div>;
+  }
+}
+
+export default { Demo1, Demo2, Demo3, Demo4, RealLife }
